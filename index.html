@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKtrade - Chuyên gia tài chính số</title>
+    <meta name="description" content="Đối tác cấp khu vực - Chia sẻ kiến thức & Tín hiệu Crypto thực chiến.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        // Facebook Pixel sẽ được load từ file riêng
+        // Thay YOUR_PIXEL_ID_HERE trong file js/fb-pixel.js
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo logo-img-wrap">
+                    <img src="https://bio.linkcdn.cc/upload/2025061210/1749724887125.png" alt="AKtrade Logo"
+                        class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Trang chủ</a>
+                    <a href="#features" class="nav-link">Tính năng</a>
+                    <a href="roadmap.html" class="nav-link">Lộ trình</a>
+                    <a href="referral.html" class="nav-link">Giới thiệu</a>
+                    <a href="blog.html" class="nav-link">Tin tức</a>
+                    <a href="#connect" class="nav-link">Liên hệ</a>
+                    <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                        class="btn btn-cta-gold" target="_blank">🎁 Nhận ngay 870K</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Market Ticker -->
+    <div class="market-ticker-wrapper">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" },
+                            { "proName": "BINANCE:ETHUSDT", "title": "ETH/USDT" },
+                            { "proName": "BINANCE:SOLUSDT", "title": "SOL/USDT" },
+                            { "proName": "BINANCE:BNBUSDT", "title": "BNB/USDT" },
+                            { "proName": "BINANCE:XRPUSDT", "title": "XRP/USDT" },
+                            { "proName": "BINANCE:ADAUSDT", "title": "ADA/USDT" }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": true,
+                                        "displayMode": "adaptive",
+                                            "locale": "vi"
+                    }
+                </script>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="badge-icon">💎</span>
+                        <span>Đối tác Quốc Gia</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Làm Chủ Thị Trường Crypto & Futures <br>
+                        Cùng <span class="gradient-text">AK Trade Group</span>
+                    </h1>
+                    <p class="hero-description">
+                        Hệ thống chiến lược thực chiến giúp bạn tối ưu lợi nhuận và quản trị rủi ro bền vững.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://t.me/Aktrade98" class="btn btn-cta-gold btn-large" target="_blank">
+                            <span>📱 Tham Gia Nhóm Telegram Miễn Phí</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Followers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">85%+</div>
+                            <div class="stat-label">Tỉ lệ thắng</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Hỗ trợ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="crypto-card">
+                        <div class="card-glow"></div>
+                        <div class="aktrade-avatar">
+                            <img src="https://bio.linkcdn.cc/upload/2025061210/1749724887125.png" alt="AKtrade Avatar"
+                                style="width: 100%; border-radius: 50%; border: 4px solid var(--primary);">
+                        </div>
+                        <div class="crypto-name" style="text-align: center; margin-top: 1rem;">AKtrade</div>
+                        <div class="ak-title"
+                            style="text-align: center; font-size: 1.2rem; color: var(--primary); font-weight: 700; font-family: 'Orbitron', sans-serif;">
+                            Chuyên gia tài chính số</div>
+                        <div class="ak-badge"
+                            style="display: block; text-align: center; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; margin-top: 0.5rem;">
+                            Verified Partner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tại sao đồng hành cùng <span class="gradient-text">AKtrade</span>?</h2>
+            </div>
+
+
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Chiến lược thực chiến</h3>
+                    <p class="feature-description">Không chỉ là lý thuyết, chúng tôi chia sẻ những gì chúng tôi đang đánh. Tín hiệu giao dịch Spot & Future với điểm entry, stoploss và take-profit rõ ràng từ kinh nghiệm thực tế.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Tín hiệu chuẩn xác</h3>
+                    <p class="feature-description">Đội ngũ phân tích kỹ thuật chuyên sâu, bám sát thị trường 24/7. Cập nhật xu hướng, phân tích dòng tiền và đưa ra tín hiệu với tỷ lệ thắng cao.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3 class="feature-title">Cộng đồng hỗ trợ</h3>
+                    <p class="feature-description">Nơi kết nối, học hỏi và cùng nhau kiếm tiền online. Đội ngũ admin và các thành viên nhiệt tình hỗ trợ giải đáp thắc mắc 24/7.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Quản trị rủi ro</h3>
+                    <p class="feature-description">Hướng dẫn phương pháp quản lý vốn và quản trị rủi ro bền vững, giúp bạn bảo toàn tài sản và tối ưu lợi nhuận trong mọi điều kiện thị trường.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crypto Chart Section -->
+    <section class="crypto-chart-section">
+        <div class="container chart-wide-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>📊</span>
+                    <span>Thị trường Crypto</span>
+                </div>
+                <h2 class="section-title">Theo dõi giá <span class="gradient-text">Real-time</span></h2>
+                <p class="section-description">Biểu đồ giá trực tiếp của các đồng coin hàng đầu</p>
+            </div>
+
+            <div class="chart-container">
+                <!-- Chart Header -->
+                <div class="chart-header">
+                    <div class="chart-tabs">
+                        <button class="chart-tab active" data-symbol="BINANCE:BTCUSDT">
+                            <span class="tab-icon">🪙</span>
+                            <span class="tab-name">Sàn ONUS</span>
+                            <span class="tab-price">Live</span>
+                        </button>
+                        <button class="chart-tab" data-symbol="FX:XAUUSD">
+                            <span class="tab-icon">📈</span>
+                            <span class="tab-name">Sàn Exness</span>
+                            <span class="tab-price">Live</span>
+                        </button>
+                        <button class="chart-tab" data-symbol="BINANCE:ETHUSDT">
+                            <span class="tab-icon">🚀</span>
+                            <span class="tab-name">Sàn ATX</span>
+                            <span class="tab-price">Live</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Chart -->
+                <div class="chart-wrapper"
+                    style="height: 850px !important; min-height: 850px !important; padding: 0; overflow: hidden; background: #131722; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <div id="tradingview_widget" style="width: 100%; height: 850px !important;"></div>
+                </div>
+            </div>
+
+            <!-- Top Coins List -->
+            <div class="top-coins">
+                <h3 class="coins-title">Top Cryptocurrencies</h3>
+                <div class="coins-grid">
+                    <div class="coin-item">
+                        <div class="coin-info">
+                            <div class="coin-icon btc">₿</div>
+                            <div>
+                                <div class="coin-name">Bitcoin</div>
+                                <div class="coin-symbol">BTC</div>
+                            </div>
+                        </div>
+                        <div class="coin-chart">
+                            <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                <path d="M0,25 L10,22 L20,24 L30,18 L40,20 L50,12 L60,14 L70,8 L80,6 L90,4 L100,2"
+                                    fill="none" stroke="#10b981" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="coin-price-info">
+                            <div class="coin-price">$45,234.56</div>
+                            <div class="coin-change positive">+5.67%</div>
+                        </div>
+                    </div>
+
+                    <div class="coin-item">
+                        <div class="coin-info">
+                            <div class="coin-icon eth">Ξ</div>
+                            <div>
+                                <div class="coin-name">Ethereum</div>
+                                <div class="coin-symbol">ETH</div>
+                            </div>
+                        </div>
+                        <div class="coin-chart">
+                            <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                <path d="M0,20 L10,18 L20,22 L30,15 L40,17 L50,10 L60,12 L70,7 L80,9 L90,5 L100,3"
+                                    fill="none" stroke="#8b5cf6" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="coin-price-info">
+                            <div class="coin-price">$3,234.12</div>
+                            <div class="coin-change positive">+3.45%</div>
+                        </div>
+                    </div>
+
+                    <div class="coin-item">
+                        <div class="coin-info">
+                            <div class="coin-icon bnb">B</div>
+                            <div>
+                                <div class="coin-name">BNB</div>
+                                <div class="coin-symbol">BNB</div>
+                            </div>
+                        </div>
+                        <div class="coin-chart">
+                            <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                <path d="M0,15 L10,17 L20,14 L30,18 L40,16 L50,20 L60,18 L70,22 L80,20 L90,24 L100,22"
+                                    fill="none" stroke="#ef4444" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="coin-price-info">
+                            <div class="coin-price">$412.89</div>
+                            <div class="coin-change negative">-1.23%</div>
+                        </div>
+                    </div>
+
+                    <div class="coin-item">
+                        <div class="coin-info">
+                            <div class="coin-icon sol">◎</div>
+                            <div>
+                                <div class="coin-name">Solana</div>
+                                <div class="coin-symbol">SOL</div>
+                            </div>
+                        </div>
+                        <div class="coin-chart">
+                            <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                                <path d="M0,22 L10,20 L20,18 L30,21 L40,19 L50,15 L60,13 L70,10 L80,8 L90,6 L100,4"
+                                    fill="none" stroke="#10b981" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="coin-price-info">
+                            <div class="coin-price">$98.45</div>
+                            <div class="coin-change positive">+8.92%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorial Section -->
+    <section class="tutorial-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>🎓</span>
+                    <span>Lộ trình khởi đầu</span>
+                </div>
+                <h2 class="section-title">Bắt đầu cùng <span class="gradient-text">AKtrade</span></h2>
+                <p class="section-description">
+                    Lộ trình 5 bước để trở thành nhà đầu tư chuyên nghiệp cùng chúng tôi
+                </p>
+            </div>
+
+            <div class="tutorial-content">
+                <!-- Video Tutorial -->
+                <div class="tutorial-video">
+                    <div class="video-wrapper">
+                        <!-- Replace with your YouTube video ID -->
+                        <iframe id="tutorialVideo" src="https://www.youtube.com/embed/V8oj9MBO3xE"
+                            title="Hướng dẫn sử dụng CryptoVerse" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">📹 Video hướng dẫn đầy đủ</h3>
+                        <p class="video-description">
+                            Xem video hướng dẫn chi tiết về cách đăng ký, nạp tiền, giao dịch và rút tiền trên
+                            CryptoVerse
+                        </p>
+                        <div class="video-stats">
+                            <span class="video-stat">⏱️ 15 phút</span>
+                            <span class="video-stat">👁️ 125K lượt xem</span>
+                            <span class="video-stat">⭐ 4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step by Step Guide -->
+                <div class="tutorial-steps">
+                    <h3 class="steps-title">📝 Quy trình tham gia</h3>
+
+                    <div class="tutorial-step">
+                        <div class="step-number-badge">1</div>
+                        <div class="step-content">
+                            <h4 class="step-title">Tham gia cộng đồng Telegram</h4>
+                            <p class="step-description">
+                                Tham gia Kênh Channel và Nhóm Chat để không bỏ lỡ những kèo thơm và tin tức thị trường.
+                            </p>
+                            <div class="step-downloads">
+                                <a href="https://t.me/Aktrade98" class="download-btn">
+                                    <span>📢 Channel</span>
+                                </a>
+                                <a href="https://t.me/Aktrade98_Chat" class="download-btn">
+                                    <span>💬 Group Chat</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="step-number-badge">2</div>
+                        <div class="step-content">
+                            <h4 class="step-title">Đăng ký tài khoản sàn</h4>
+                            <p class="step-description">
+                                Đăng ký các sàn giao dịch (ONUS, Exness, ATX) dưới link của AKtrade để được ưu đãi phí
+                                và hỗ trợ chuyên sâu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="step-number-badge">3</div>
+                        <div class="step-content">
+                            <h4 class="step-title">Nạp vốn & Chuẩn bị</h4>
+                            <p class="step-description">
+                                Nạp USDT vào sàn và tìm hiểu các lệnh giao dịch cơ bản qua các video hướng dẫn trên
+                                TikTok.
+                            </p>
+                            <div class="payment-methods">
+                                <span class="payment-badge">USDT</span>
+                                <span class="payment-badge">Spot</span>
+                                <span class="payment-badge">Future</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="step-number-badge">4</div>
+                        <div class="step-content">
+                            <h4 class="step-title">Theo dõi tín hiệu</h4>
+                            <p class="step-description">
+                                Quan sát các tín hiệu được post trên channel, thực hiện lệnh theo các thông số Entry,
+                                SL, TP được cung cấp.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-step">
+                        <div class="step-number-badge">5</div>
+                        <div class="step-content">
+                            <h4 class="step-title">Học hỏi & Kiếm tiền</h4>
+                            <p class="step-description">
+                                Không chỉ copy kèo, hãy học cách phân tích và quản lý vốn từ AKtrade để trở thành nhà
+                                đầu tư độc lập.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources & Links -->
+                <div class="tutorial-resources">
+                    <h3 class="resources-title">🔗 Liên kết quan trọng</h3>
+                    <div class="resources-grid">
+                        <a href="https://t.me/Aktrade98" class="resource-card">
+                            <div class="resource-icon">📢</div>
+                            <h4 class="resource-title">Telegram Channel</h4>
+                            <p class="resource-description">Kênh tín hiệu & tin tức (Free)</p>
+                        </a>
+
+                        <a href="https://t.me/Aktrade98_Chat" class="resource-card">
+                            <div class="resource-icon">💬</div>
+                            <h4 class="resource-title">Telegram Group</h4>
+                            <p class="resource-description">Thảo luận & Hỗ trợ cộng đồng</p>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@teamaktrade?_r=1&_t=ZS-91wGyzet63Q" class="resource-card"
+                            target="_blank">
+                            <div class="resource-icon">🎬</div>
+                            <h4 class="resource-title">TikTok AKtrade</h4>
+                            <p class="resource-description">Video kiến thức & kinh nghiệm</p>
+                        </a>
+
+                        <a href="https://www.youtube.com/@AKtrade-Group" class="resource-card" target="_blank">
+                            <div class="resource-icon">🎥</div>
+                            <h4 class="resource-title">YouTube AKtrade</h4>
+                            <p class="resource-description">Video hướng dẫn & livestream</p>
+                        </a>
+
+                        <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                            class="resource-card exchange-accent" target="_blank">
+                            <div class="resource-icon">🪙</div>
+                            <h4 class="resource-title">Sàn ONUS</h4>
+                            <p class="resource-description">Tặng 870K. Lãi 12.8%/năm</p>
+                            <div class="ref-code-v3" onclick="event.preventDefault();"
+                                style="display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(16, 185, 129, 0.15); border: 2px solid var(--primary); padding: 6px 15px; border-radius: 12px; margin-top: 15px; transition: all 0.3s ease;">
+                                <span
+                                    style="font-size: 0.8rem; font-weight: 800; color: #fff; letter-spacing: 0.5px;">Mã:
+                                    <span id="idxOnusCode"
+                                        style="color: var(--primary); font-family: 'Orbitron', monospace;">6163996634</span></span>
+                                <button class="copy-btn-trigger" data-target="idxOnusCode"
+                                    style="background: none; border: none; color: var(--primary); cursor: pointer; display: flex; align-items: center; padding: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="https://one.exnessonelink.com/a/ifdel9ksw4" class="resource-card exchange-accent"
+                            target="_blank">
+                            <div class="resource-icon">📈</div>
+                            <h4 class="resource-title">Sàn Exness</h4>
+                            <p class="resource-description">Sàn uy tín. Hoàn phí tự động</p>
+                            <div class="ref-code-v3" onclick="event.preventDefault();"
+                                style="display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(16, 185, 129, 0.15); border: 2px solid var(--primary); padding: 6px 15px; border-radius: 12px; margin-top: 15px; transition: all 0.3s ease;">
+                                <span
+                                    style="font-size: 0.8rem; font-weight: 800; color: #fff; letter-spacing: 0.5px;">Mã:
+                                    <span id="idxExCode"
+                                        style="color: var(--primary); font-family: 'Orbitron', monospace;">ifdel9ksw4</span></span>
+                                <button class="copy-btn-trigger" data-target="idxExCode"
+                                    style="background: none; border: none; color: var(--primary); cursor: pointer; display: flex; align-items: center; padding: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+
+                        <a href="https://atxs.io/r/14922336" class="resource-card exchange-accent" target="_blank">
+                            <div class="resource-icon">🚀</div>
+                            <h4 class="resource-title">Sàn ATX</h4>
+                            <p class="resource-description">Giao dịch phái sinh - Hoàn phí</p>
+                            <div class="ref-code-v3" onclick="event.preventDefault();"
+                                style="display: flex; align-items: center; justify-content: center; gap: 8px; background: rgba(16, 185, 129, 0.15); border: 2px solid var(--primary); padding: 6px 15px; border-radius: 12px; margin-top: 15px; transition: all 0.3s ease;">
+                                <span
+                                    style="font-size: 0.8rem; font-weight: 800; color: #fff; letter-spacing: 0.5px;">Mã:
+                                    <span id="idxAtxCode"
+                                        style="color: var(--primary); font-family: 'Orbitron', monospace;">14922336</span></span>
+                                <button class="copy-btn-trigger" data-target="idxAtxCode"
+                                    style="background: none; border: none; color: var(--primary); cursor: pointer; display: flex; align-items: center; padding: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick FAQ -->
+                <div class="tutorial-faq">
+                    <h3 class="faq-title">❓ Câu hỏi thường gặp</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Làm sao để tham gia nhóm tín hiệu?</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Bạn chỉ cần tham gia Telegram Channel (Free). Với các nhóm tín hiệu nâng cao, hãy
+                                    đăng ký sàn qua link của AKtrade và nhắn tin cho Admin.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Phí giao dịch là bao nhiêu?</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Phí giao dịch chỉ từ 0.1% - thấp nhất thị trường. Người dùng VIP được giảm thêm 50%.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Mất bao lâu để rút tiền?</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Rút crypto: 5-30 phút. Rút tiền về ngân hàng: 1-24 giờ tùy ngân hàng.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">
+                                <span>Có an toàn không?</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Tuyệt đối an toàn với mã hóa SSL, ví lạnh, 2FA và bảo hiểm tài sản người dùng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>💬</span>
+                    <span>Phản hồi cộng đồng</span>
+                </div>
+                <h2 class="section-title">Học viên nói gì về <span class="gradient-text">AKtrade</span>?</h2>
+                <p class="section-description">
+                    Những chia sẻ thực tế từ các thành viên trong cộng đồng về trải nghiệm và lợi nhuận
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <div class="user-avatar">H</div>
+                        <div>
+                            <div class="user-name">Hoàng Nam</div>
+                            <div class="user-rank">Premium Member</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">
+                        "Đi theo tín hiệu của AKtrade 3 tháng nay, tài khoản của mình đã tăng trưởng hơn 40%. Điều mình
+                        thích nhất là Admin giải thích rất kỹ lý do vào lệnh."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <div class="user-avatar">M</div>
+                        <div>
+                            <div class="user-name">Minh Châu</div>
+                            <div class="user-rank">Newbie Trader</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">
+                        "Là người mới hoàn toàn, mình rất sợ bị lừa. Nhưng kiến thức ở AKtrade rất thực tế, dễ hiểu. Giờ
+                        mình đã tự tin tự phân tích được chart cơ bản."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="user-info">
+                        <div class="user-avatar">T</div>
+                        <div>
+                            <div class="user-name">Thành Trung</div>
+                            <div class="user-rank">VVIP Member</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">
+                        "Hỗ trợ 1-1 cực kỳ tâm huyết. Những lúc thị trường sập, Admin luôn ở đó trấn an và đưa ra kế
+                        hoạch quản trị rủi ro rất kịp thời."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Sẵn sàng nâng tầm đầu tư Crypto?</h2>
+            <p class="cta-description">Tham gia cùng cộng đồng 10,000+ nhà đầu tư thông thái ngay hôm nay!</p>
+            <div class="cta-buttons">
+                <a href="https://t.me/Aktrade98" class="btn btn-primary btn-large">Tham gia ngay miễn phí</a>
+            </div>
+        </div>
+        <!-- Bio Section on Homepage -->
+        <section class="bio-section" id="connect">
+            <div class="container container-narrow">
+                <div class="bio-container">
+                    <div class="bio-header-content">
+                        <img src="https://bio.linkcdn.cc/upload/2025061210/1749724887125.png" alt="AKtrade"
+                            class="bio-avatar">
+                        <h2 class="bio-title">Liên hệ <span class="highlight">AKtrade</span></h2>
+                        <p class="bio-subtitle">Theo dõi chúng tôi trên mọi nền tảng</p>
+                    </div>
+
+                    <div class="bio-links">
+                        <a href="https://t.me/Aktrade98" class="bio-link-card" target="_blank">
+                            <div class="bio-icon">📢</div>
+                            <div class="bio-text">
+                                <h3>Telegram Channel</h3>
+                                <p>Kênh tín hiệu & tin tức nhanh nhất (Free)</p>
+                            </div>
+                        </a>
+
+                        <a href="https://t.me/Aktrade98_Chat" class="bio-link-card" target="_blank">
+                            <div class="bio-icon">💬</div>
+                            <div class="bio-text">
+                                <h3>Telegram Group</h3>
+                                <p>Cộng đồng thảo luận & Hỗ trợ kỹ thuật</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@teamaktrade?_r=1&_t=ZS-91wGyzet63Q" class="bio-link-card"
+                            target="_blank">
+                            <div class="bio-icon">🎬</div>
+                            <div class="bio-text">
+                                <h3>TikTok AKtrade</h3>
+                                <p>Video ngắn chia sẻ kiến thức thực chiến</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="social-flex">
+                        <a href="https://t.me/Aktrade98" class="social-icon" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L8.08 13.768l-2.97-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@teamaktrade?_r=1&_t=ZS-91wGyzet63Q" class="social-icon"
+                            target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.86-.6-4.12-1.31a6.34 6.34 0 01-2.02-2.12v11.5c0 1.57-.44 3.16-1.43 4.39-1.13 1.4-2.84 2.1-4.63 2.06-1.57.06-3.15-.45-4.29-1.55-1.14-1.1-1.68-2.67-1.49-4.23.16-1.43.95-2.73 2.15-3.52 1.13-.74 2.53-.98 3.86-.71v4.21c-.81-.19-1.7-.06-2.37.45-.64.5-.94 1.3-.82 2.1.1.75.64 1.41 1.36 1.62.72.22 1.55.05 2.1-.45.54-.5.78-1.25.74-1.96V.02z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">AK</div>
+                            <span class="logo-text">AK<span class="highlight">trade</span></span>
+                        </div>
+                        <p>Chuyên gia tài chính số - Đối tác cấp khu vực.</p>
+                    </div>
+
+                    <div class="risk-notice-box">
+                        <div class="notice-header">
+                            <span class="notice-icon">⚠️</span>
+                            <h3>Cảnh báo rủi ro tài chính</h3>
+                        </div>
+                        <p>Giao dịch tiền điện tử, ngoại hối và phái sinh tiềm ẩn mức độ rủi ro vốn rất cao. Bạn có thể
+                            mất
+                            một phần hoặc toàn bộ số vốn đầu tư của mình. Mọi thông tin, tín hiệu và phân tích được cung
+                            cấp
+                            bởi AKtrade chỉ mang tính chất tham khảo, giáo dục và không được coi là lời khuyên đầu tư
+                            tài
+                            chính chính thức. Người dùng hoàn toàn chịu trách nhiệm về mọi quyết định và hành động giao
+                            dịch
+                            của chính mình.</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 AKtrade. All rights reserved. Professional Financial Education Community.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Contact -->
+        <div class="floating-contact">
+            <a href="https://t.me/Aktrade98" class="contact-item telegram" target="_blank">
+                <span class="tooltip">Chat với Admin</span>
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L8.08 13.768l-2.97-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+                </svg>
+            </a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+        <script src="js/fb-pixel.js"></script>
+        <script src="js/content-loader.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

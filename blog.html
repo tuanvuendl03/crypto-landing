@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức & Kiến thức - AKtrade</title>
+    <meta name="description" content="Tin tức, phân tích và kiến thức về Crypto & Futures từ AKtrade">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo logo-img-wrap">
+                    <img src="https://bio.linkcdn.cc/upload/2025061210/1749724887125.png" alt="AKtrade Logo"
+                        class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                    <a href="index.html#features" class="nav-link">Tính năng</a>
+                    <a href="roadmap.html" class="nav-link">Lộ trình</a>
+                    <a href="referral.html" class="nav-link">Giới thiệu</a>
+                    <a href="blog.html" class="nav-link active">Tin tức</a>
+                    <a href="index.html#connect" class="nav-link">Liên hệ</a>
+                    <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                        class="btn btn-cta-gold" target="_blank">🎁 Nhận ngay 870K</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="blog-hero-content">
+                <div class="badge">
+                    <span class="badge-icon">📰</span>
+                    <span>Blog & Tin tức</span>
+                </div>
+                <h1 class="blog-hero-title">
+                    Kiến thức & Phân tích <br>
+                    <span class="gradient-text">Crypto & Futures</span>
+                </h1>
+                <p class="blog-hero-description">
+                    Cập nhật tin tức mới nhất, phân tích chuyên sâu và hướng dẫn chi tiết về thị trường crypto
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Filter -->
+    <section class="blog-filter-section">
+        <div class="container">
+            <div class="blog-filter">
+                <button class="filter-btn active" data-category="all">
+                    <span>Tất cả</span>
+                </button>
+                <button class="filter-btn" data-category="huong-dan">
+                    <span>📚 Hướng dẫn</span>
+                </button>
+                <button class="filter-btn" data-category="phan-tich">
+                    <span>📊 Phân tích</span>
+                </button>
+                <button class="filter-btn" data-category="tin-tuc">
+                    <span>📰 Tin tức</span>
+                </button>
+                <button class="filter-btn" data-category="kien-thuc">
+                    <span>💡 Kiến thức</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts-section">
+        <div class="container">
+            <div class="blog-posts-grid" id="blogPostsGrid">
+                <!-- Posts will be loaded here by JavaScript -->
+                <div class="no-posts" id="noPosts">
+                    <div class="no-posts-icon">📝</div>
+                    <h3>Chưa có bài viết</h3>
+                    <p>Các bài viết sẽ được cập nhật sớm. Hãy quay lại sau nhé!</p>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" id="loadMoreContainer" style="display: none;">
+                <button class="btn btn-primary btn-large" id="loadMoreBtn">
+                    <span>Xem thêm bài viết</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <h2>📬 Đăng ký nhận tin</h2>
+                    <p>Nhận thông báo về bài viết mới và phân tích thị trường qua Telegram</p>
+                    <div class="newsletter-actions">
+                        <a href="https://t.me/Aktrade98" class="btn btn-primary btn-large" target="_blank">
+                            <span>📢 Tham gia Telegram Channel</span>
+                        </a>
+                        <a href="https://t.me/Aktrade98_Chat" class="btn btn-secondary btn-large" target="_blank">
+                            <span>💬 Tham gia Group Chat</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">AK</div>
+                        <span class="logo-text">AK<span class="highlight">trade</span></span>
+                    </div>
+                    <p>Chuyên gia tài chính số - Đối tác cấp khu vực.</p>
+                </div>
+
+                <div class="risk-notice-box">
+                    <div class="notice-header">
+                        <span class="notice-icon">⚠️</span>
+                        <h3>Cảnh báo rủi ro tài chính</h3>
+                    </div>
+                    <p>Giao dịch tiền điện tử, ngoại hối và phái sinh tiềm ẩn mức độ rủi ro vốn rất cao. Bạn có thể
+                        mất một phần hoặc toàn bộ số vốn đầu tư của mình.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AKtrade. All rights reserved. Professional Financial Education Community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact -->
+    <div class="floating-contact">
+        <a href="https://t.me/Aktrade98" class="contact-item telegram" target="_blank">
+            <span class="tooltip">Chat với Admin</span>
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L8.08 13.768l-2.97-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>

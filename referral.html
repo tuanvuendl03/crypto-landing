@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương trình cộng tác - AKtrade</title>
+    <meta name="description" content="Tham gia đội ngũ cộng tác viên của AKtrade và nhận nhiều quyền lợi hấp dẫn">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo logo-img-wrap">
+                    <img src="https://bio.linkcdn.cc/upload/2025061210/1749724887125.png" alt="AKtrade Logo"
+                        class="logo-img">
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                    <a href="index.html#features" class="nav-link">Tính năng</a>
+                    <a href="roadmap.html" class="nav-link">Lộ trình</a>
+                    <a href="referral.html" class="nav-link active">Giới thiệu</a>
+                    <a href="blog.html" class="nav-link">Tin tức</a>
+                    <a href="index.html#connect" class="nav-link">Liên hệ</a>
+                    <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                        class="btn btn-cta-gold" target="_blank">🎁 Nhận ngay 870K</a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Market Ticker -->
+    <div class="market-ticker-wrapper">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [
+                            { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" },
+                            { "proName": "BINANCE:ETHUSDT", "title": "ETH/USDT" },
+                            { "proName": "BINANCE:SOLUSDT", "title": "SOL/USDT" },
+                            { "proName": "BINANCE:BNBUSDT", "title": "BNB/USDT" },
+                            { "proName": "BINANCE:XRPUSDT", "title": "XRP/USDT" },
+                            { "proName": "BINANCE:ADAUSDT", "title": "ADA/USDT" }
+                        ],
+                            "showSymbolLogo": true,
+                                "colorTheme": "dark",
+                                    "isTransparent": true,
+                                        "displayMode": "adaptive",
+                                            "locale": "vi"
+                    }
+                </script>
+        </div>
+    </div>
+
+    <section class="referral-hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="referral-hero-content">
+                <div class="badge">
+                    <span class="badge-icon">🎁</span>
+                    <span>Chương trình giới thiệu</span>
+                </div>
+                <h1 class="hero-title">
+                    Đồng hành cùng <span class="gradient-text">AKtrade</span>
+                </h1>
+                <p class="hero-description">
+                    Tham gia đội ngũ cộng tác viên của AKtrade để nhận được những quyền lợi ưu tiên, quà tặng độc quyền
+                    và hỗ trợ phát triển cộng đồng.
+                </p>
+                <div class="referral-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-value">30%</div>
+                        <div class="stat-label">Hoa hồng</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-value">Không giới hạn</div>
+                        <div class="stat-label">Số người giới thiệu</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-value">Tức thì</div>
+                        <div class="stat-label">Nhận thưởng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Exchange Partner Referral Promo Section -->
+    <style>
+        .custom-promo-section {
+            padding: 100px 0;
+            background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 70%), #0a0a0f;
+            position: relative;
+            z-index: 10;
+        }
+
+        .promo-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .promo-header h2 {
+            font-size: 3rem;
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .promo-grid-premium {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .premium-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 40px;
+            padding: 50px 30px;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-20px);
+            border-color: #10b981;
+            box-shadow: 0 40px 80px rgba(16, 185, 129, 0.25);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .card-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .premium-card:hover .card-glow {
+            opacity: 1;
+        }
+
+        .p-badge {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .p-icon {
+            font-size: 5rem;
+            margin-bottom: 25px;
+            display: inline-block;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+        }
+
+        .p-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .p-desc {
+            font-size: 1.1rem;
+            color: #a0aec0;
+            margin-bottom: 30px;
+            min-height: 3.5rem;
+            line-height: 1.6;
+        }
+
+        .ref-box-v2 {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .premium-card:hover .ref-box-v2 {
+            border-color: rgba(16, 185, 129, 0.4);
+            transform: scale(1.02);
+        }
+
+        .ref-lbl {
+            font-size: 0.8rem;
+            color: #10b981;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .ref-val-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ref-val {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .copy-btn-v2 {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+            padding: 10px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copy-btn-v2:hover {
+            background: #10b981;
+            color: #fff;
+            transform: rotate(10deg);
+        }
+
+        .instr-box {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 5px solid #f59e0b;
+            padding: 20px;
+            border-radius: 0 20px 20px 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .p-btn-v2 {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 20px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+            margin-top: auto;
+        }
+
+        .p-btn-v2:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #059669, #10b981);
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .promo-grid-premium {
+                grid-template-columns: 1fr;
+            }
+
+            .premium-card {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+
+    <section class="custom-promo-section">
+        <div class="promo-header">
+            <div class="container">
+                <h2>Đối tác chiến lược tại các sàn giao dịch<span class="gradient-text"> hàng đầu thế giới</span></h2>
+                <p class="section-description">Độc quyền ưu đãi dành cho cộng đồng AKtrade</p>
+            </div>
+        </div>
+
+        <div class="promo-grid-premium">
+            <!-- ONUS -->
+            <div class="premium-card">
+                <div class="card-glow"></div>
+                <div class="p-badge">HOT 🎁</div>
+                <span class="p-icon">🪙</span>
+                <h3 class="p-title">Sàn ONUS</h3>
+                <p class="p-desc">Tặng ngay 870.000đ khi đăng ký. Lãi qua đêm 12.8%/năm - Rút tiền tươi có ngay.</p>
+
+                <div class="ref-box-v2">
+                    <span class="ref-lbl">Mã giới thiệu</span>
+                    <div class="ref-val-row">
+                        <span class="ref-val" id="onusV2">6163996634</span>
+                        <button class="copy-btn-v2 copy-btn-trigger" data-target="onusV2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                    target="_blank" class="p-btn-v2">Đăng ký ngay</a>
+            </div>
+
+            <!-- Exness -->
+            <div class="premium-card">
+                <div class="card-glow"></div>
+                <div class="p-badge">BEST 📈</div>
+                <span class="p-icon">📉</span>
+                <h3 class="p-title">Sàn Exness</h3>
+                <p class="p-desc">Backcom 50% phí giao dịch.</p>
+
+                <div class="ref-box-v2">
+                    <span class="ref-lbl">Mã giới thiệu</span>
+                    <div class="ref-val-row">
+                        <span class="ref-val" id="exnessV2">ifdel9ksw4</span>
+                        <button class="copy-btn-v2 copy-btn-trigger" data-target="exnessV2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+                <a href="https://one.exnessonelink.com/a/ifdel9ksw4" target="_blank" class="p-btn-v2">Mở tài khoản</a>
+            </div>
+
+            <!-- ATX -->
+            <div class="premium-card">
+                <div class="card-glow"></div>
+                <div class="p-badge">MỚI 🚀</div>
+                <span class="p-icon">🚀</span>
+                <h3 class="p-title">Sàn ATX</h3>
+                <p class="p-desc">Nhận hoàn phí nên đến 80%.</p>
+
+                <div class="ref-box-v2">
+                    <span class="ref-lbl">Mã giới thiệu</span>
+                    <div class="ref-val-row">
+                        <span class="ref-val" id="atxV2">14922336</span>
+                        <button class="copy-btn-v2 copy-btn-trigger" data-target="atxV2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <a href="https://atxs.io/r/14922336" target="_blank" class="p-btn-v2">Đăng ký ATX</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cách thức hoạt động</h2>
+                <p class="section-description">3 bước đơn giản để bắt đầu kiếm tiền</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📋</div>
+                    <h3 class="step-title">Lấy mã giới thiệu</h3>
+                    <p class="step-description">
+                        Đăng ký tài khoản CryptoVerse và nhận mã giới thiệu độc quyền của bạn
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">📢</div>
+                    <h3 class="step-title">Chia sẻ với bạn bè</h3>
+                    <p class="step-description">
+                        Gửi mã hoặc link giới thiệu cho bạn bè qua Facebook, Telegram, Twitter
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">💸</div>
+                    <h3 class="step-title">Nhận hoa hồng</h3>
+                    <p class="step-description">
+                        Kiếm 30% hoa hồng từ mọi giao dịch của người bạn giới thiệu - Mãi mãi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="commission-tiers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bảng hoa hồng</h2>
+                <p class="section-description">Càng giới thiệu nhiều, hoa hồng càng cao</p>
+            </div>
+
+            <div class="tiers-grid">
+                <div class="tier-card">
+                    <div class="tier-badge bronze">Đồng</div>
+                    <div class="tier-commission">20%</div>
+                    <div class="tier-requirement">1-10 người</div>
+                    <ul class="tier-benefits">
+                        <li>✓ Hoa hồng 20% từ phí giao dịch</li>
+                        <li>✓ Rút tiền hàng ngày</li>
+                        <li>✓ Dashboard theo dõi</li>
+                    </ul>
+                </div>
+
+                <div class="tier-card featured">
+                    <div class="tier-badge silver">Bạc</div>
+                    <div class="tier-commission">25%</div>
+                    <div class="tier-requirement">11-50 người</div>
+                    <ul class="tier-benefits">
+                        <li>✓ Hoa hồng 25% từ phí giao dịch</li>
+                        <li>✓ Rút tiền không giới hạn</li>
+                        <li>✓ Hỗ trợ ưu tiên</li>
+                        <li>✓ Bonus thêm $100</li>
+                    </ul>
+                </div>
+
+                <div class="tier-card">
+                    <div class="tier-badge gold">Vàng</div>
+                    <div class="tier-commission">30%</div>
+                    <div class="tier-requirement">51+ người</div>
+                    <ul class="tier-benefits">
+                        <li>✓ Hoa hồng 30% từ phí giao dịch</li>
+                        <li>✓ Rút tiền VIP</li>
+                        <li>✓ Account Manager riêng</li>
+                        <li>✓ Bonus thêm $500</li>
+                        <li>✓ Quà tặng độc quyền</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Links Section -->
+    <section class="tutorial-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🔗 <span class="gradient-text">Liên kết quan trọng</span></h2>
+                <p class="section-description">Truy cập các kênh chính thức và ưu đãi từ đối tác</p>
+            </div>
+            <div class="resources-grid">
+                <a href="https://t.me/Aktrade98" class="resource-card" target="_blank">
+                    <div class="resource-icon">📢</div>
+                    <h4 class="resource-title">Telegram Channel</h4>
+                    <p class="resource-description">Kênh tín hiệu & tin tức (Free)</p>
+                </a>
+
+                <a href="https://t.me/Aktrade98_Chat" class="resource-card" target="_blank">
+                    <div class="resource-icon">💬</div>
+                    <h4 class="resource-title">Telegram Group</h4>
+                    <p class="resource-description">Thảo luận & Hỗ trợ cộng đồng</p>
+                </a>
+
+                <a href="https://www.tiktok.com/@teamaktrade?_r=1&_t=ZS-91wGyzet63Q" class="resource-card"
+                    target="_blank">
+                    <div class="resource-icon">🎬</div>
+                    <h4 class="resource-title">TikTok AKtrade</h4>
+                    <p class="resource-description">Video kiến thức & kinh nghiệm</p>
+                </a>
+
+                <a href="https://www.youtube.com/@AKtrade-Group" class="resource-card" target="_blank">
+                    <div class="resource-icon">🎥</div>
+                    <h4 class="resource-title">YouTube AKtrade</h4>
+                    <p class="resource-description">Video hướng dẫn & livestream</p>
+                </a>
+
+                <a href="https://goonus.io/signup/6277729715974209438?uiid=OlnX7YWy3o&utm_campaign=invite"
+                    class="resource-card" target="_blank">
+                    <div class="resource-icon">🪙</div>
+                    <h4 class="resource-title">App ONUS</h4>
+                    <p class="resource-description">Nhận 870K miễn phí & Lãi 12.8%</p>
+                    <span class="ref-code-badge"
+                        style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--primary); background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">Mã:
+                        6163996634</span>
+                </a>
+
+                <a href="https://one.exnessonelink.com/a/ifdel9ksw4" class="resource-card" target="_blank">
+                    <div class="resource-icon">📈</div>
+                    <h4 class="resource-title">Sàn Exness</h4>
+                    <p class="resource-description">Sàn giao dịch uy tín toàn cầu</p>
+                    <span class="ref-code-badge"
+                        style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--primary); background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">Mã:
+                        ifdel9ksw4</span>
+                </a>
+
+                <a href="https://atxs.io/r/14922336" class="resource-card" target="_blank">
+                    <div class="resource-icon">🚀</div>
+                    <h4 class="resource-title">Sàn ATX</h4>
+                    <p class="resource-description">Giao dịch phái sinh thế hệ mới</p>
+                    <span class="ref-code-badge"
+                        style="display: inline-block; margin-top: 0.5rem; font-size: 0.75rem; color: var(--primary); background: rgba(16, 185, 129, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px;">Mã:
+                        14922336</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="signup-card">
+                <h2 class="section-title">Đăng ký ngay hôm nay</h2>
+                <p class="section-description">Bắt đầu hành trình kiếm tiền với CryptoVerse</p>
+
+                <form class="signup-form" id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên</label>
+                            <input type="text" id="fullname" name="fullname" required placeholder="Nguyễn Văn A">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="0912345678">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <input type="password" id="password" name="password" required placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="refCode">Mã giới thiệu (nếu có)</label>
+                        <input type="text" id="refCode" name="refCode" placeholder="Nhập mã giới thiệu">
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            Tôi đồng ý với <a href="#">Điều khoản sử dụng</a> và <a href="#">Chính sách bảo mật</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-full">
+                        <span>Đăng ký miễn phí</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <p class="form-note">
+                        Đã có tài khoản? <a href="#">Đăng nhập ngay</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">AK</div>
+                        <span class="logo-text">AK<span class="highlight">trade</span></span>
+                    </div>
+                    <p>Chuyên gia tài chính số - Đối tác cấp khu vực.</p>
+                </div>
+
+                <div class="risk-notice-box">
+                    <div class="notice-header">
+                        <span class="notice-icon">⚠️</span>
+                        <h3>Cảnh báo rủi ro tài chính</h3>
+                    </div>
+                    <p>Giao dịch tiền điện tử, ngoại hối và phái sinh tiềm ẩn mức độ rủi ro vốn rất cao. Bạn có thể mất
+                        một phần hoặc toàn bộ số vốn đầu tư của mình. Mọi thông tin, tín hiệu và phân tích được cung cấp
+                        bởi AKtrade chỉ mang tính chất tham khảo, giáo dục và không được coi là lời khuyên đầu tư tài
+                        chính chính thức. Người dùng hoàn toàn chịu trách nhiệm về mọi quyết định và hành động giao dịch
+                        của chính mình.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 AKtrade. All rights reserved. Professional Financial Education Community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact -->
+    <div class="floating-contact">
+        <a href="https://t.me/Aktrade98" class="contact-item telegram" target="_blank">
+            <span class="tooltip">Chat với Admin</span>
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L8.08 13.768l-2.97-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
+            </svg>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
